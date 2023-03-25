@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+<style>
+.sidebarRight1{
+    position: fixed;
+    width:90px;
+    height:340px;
+   display: flex;
+   justify-content: space-around;
+    margin-left: 400px;
+    margin-top: 70px;
+    background: #000000;
+    border-radius:20px 0 0px 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    
+}
+.checkBox1{
+    display: none;
+}
+.labelRight{
+    font-size: 17px;
+    font-weight: 500;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+     color: white;
+     padding: 10px;
+ 
+}
+.labelRight::before{
+    content:'+';
+    font-size: 40px;
+    padding-top: 0px;
+    padding-bottom:20px;
+    transition: all 0.3s ease; 
+   
+}
+.notepad{
+    display: none;
+    width:50px;
+    height:340px;
+    background-color:white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.notepadTextarea{
+    width:60px;
+    height:330px;
+    background-color: white;
+    border: none;
+    outline: none;
+    resize: none;
+    
+}
+.checkBox1:checked ~ .notepad{
+    display: flex;
+    
+}
+
+
+</style>    
+</head>
+<body>
+<div class="sidebarRight1">
+    
+     <input type="checkbox" class="checkBox1" id="sidebarClose">
+     <label for="sidebarClose" class="labelRight">Notice  Board</label>
+    <div class="notepad">
+        <textarea class="notepadTextarea"></textarea>
+    </div>
+</div>
+<!--<div>
+    <label>
+        hello every one
+    </label>
+</div>-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<head>
+<style>
+
+.sidebarLeft1{
+    position: fixed;
+    width: 132px;
+    height: 700px;
+    display:inline;
+    background: #FDFDFD;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 20px;
+    float: left;
+
+}
+.inputCheck1{
+    display: none;
+}
+
+.labelData1{
+      
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    display:flex;
+    border-radius: 0px 20px 0px 0px;
+    color: #FFFFFF;
+    background-color: #1b1a1a;  
+    }
+.labelData1::after{
+        content:'';
+        width: 30px;
+        height: 30px;
+        margin-left: 80px;
+        background: url(assests/icons8-circled-right-30.png) no-repeat 0 0;
+        transition: all 0.3s ease;
+        margin-bottom: 0px;
+        
+    }
+ 
+
+.listItem1{
+   
+    box-sizing: border-box;
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 32px;
+    top: 100px;
+    border: 2px solid #0029FF;
+    border-radius: 20px;
+}
+.listItemData1{
+    font-family: "Poppins";
+    font-size: 29px;
+    font-weight: 400;
+    color: #0029FF;
+    text-align:center;
+    
+    
+}
+.inputCheck1:checked ~ .sidebarLeft2{
+    display:block;
+   
+}
+
+/*secon collapsible*/
+.sidebarLeft2{
+    display:none;
+    position: absolute;
+    width: 392px;
+    height: 529px;
+    left: 0px;
+    top: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.inputCheck2{
+   display: none; 
+}
+
+.labelData2{
+    width: 370px;
+    height: 40px; 
+    cursor: pointer;
+    display:block;
+    border-radius: 0px 20px 0px 0px;
+    color: #FFFFFF;
+    background-color: #1b1a1a;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 20px;
+    padding: 12px;
+    
+    }
+.labelData2::after{
+        content:'';
+        width: 30px;
+        height: 30px;    
+        background: url(assests/icons8-circled-right-30.png) no-repeat 0 0;
+        transition: all 0.3s ease; 
+            
+    }
+    .listItem2{
+       margin-top:80px;
+       color: #000;
+       width: 392px;
+       padding: 30px;
+       
+      
+    }
+   #listItemHeading{
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        margin-bottom: 10px;
+        color: #000000;
+        padding: 0px;
+   }
+   .listItem2 li{
+    font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        margin-bottom: 10px;
+        color: #000000;
+        padding: 0px;
+   }
+   
+</style>
+</head>
+<body>-->
+<!--left Collapsible-->    
+<!--<div class="wrapper">
+    <div class="collapsible">
+        first short collapsible
+        <div class="sidebarLeft1">
+            <input type="checkbox" class="inputCheck1" id="openClose">
+            <label for="openClose" class="labelData1"></label>
+        <div class="listItem1">
+            <h1 class="listItemData1">1</h1>
+        </div>
+       second Long collapsible
+        <div  class="sidebarLeft2">
+            <div  class="arrowplace2">
+                <input type="checkbox" class="inputCheck2" id="openClose">
+                <label for="openClose" class="labelData2">Journey Board</lable>
+              <div>   
+                <ul class="listItem2">
+                    <li id="listItemHeading">
+                        Explore the world of management
+                    </li>
+                    <li>
+                        Technical Project Management
+                    </li>
+                    <li>
+                        Threadbuild
+                    </li>
+                    <li>
+                        Structure you pointers
+                    </li>
+                    <li>
+                        4SA Method
+                    </li>
+                </ul>
+                </div>    
+            </div>
+        </div>
+        
+    
+     </div>
+     </div> 
+    </div>
+</body>
+</html>-->

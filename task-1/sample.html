@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<style>
+    *{
+        background-color: #efeff5;
+    }
+
+    .collapsible{
+        width: 200px;
+        height: 400px;
+        background-color: #4c4cd3;
+        border-radius: 10px;
+        position: absolute;
+        display:flex;
+    }
+    .content{
+       margin: 10px;
+        background-color:#4c4cd3;
+    }
+    .content h1{
+        
+        font-size: 30px;
+        background-color:transparent;
+        color: white;
+    }
+    .content1 h1{
+        display: none;
+        font-size: 30px;
+        background-color:transparent;
+        color: white;
+    }
+  .inputbox{
+
+  }
+  .inputbox:checked ~ .collapsible2{
+    display: inline;
+   
+  }
+  .labelcontent{
+
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    display:flex;
+    border-radius: 0px 20px 0px 0px;
+    color: #FFFFFF;
+    background-color: #1b1a1a;  
+  }
+  .labelcontent::after{
+        content:'';
+        width: 30px;
+        height: 30px;
+        margin-left: 80px;
+        background: url(assests/icons8-circled-right-30.png) no-repeat 0 0;
+        transition: all 0.3s ease;
+        
+    }
+.collapsible2{
+  display: none;   
+    width: 400px;
+        height: 500px;
+        background-color: #a5a5b4;
+        border-radius: 10px;
+        position: absolute;
+        margin-top: 0px;
+}
+</style>
+</head>
+<body>
+  
+<div class="collapsible">
+    <input type="checkbox" id="openClose" class="inputbox">
+    <label for="openClose" class="labelcontent">newone</label>
+    <div class="content">
+        <h1>welcome new challenge</h1>
+    </div>
+    
+    <div class="collapsible2">
+        <input type="checkbox" id="openClose" class="inputbox">
+    <label for="openClose" class="labelcontent">newone</label>
+        <div>
+         <h1>hi how are</h1>
+         <h1>i hope your are good</h1>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
